@@ -1,8 +1,8 @@
-알겠습니다. 검색 바에 버튼을 추가하겠습니다. 
+다음 페이지는 **게시판 페이지 (Forum)**입니다.
 
-### 1. 수정된 홈페이지 (Home)
+### 4. 게시판 페이지 (Forum)
 
-#### HTML 구조 (`index.html`)
+#### HTML 구조 (`forum.html`)
 
 ```html
 <!DOCTYPE html>
@@ -10,17 +10,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ScientiaForum - Home</title>
+    <title>ScientiaForum - Forum</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Header Section -->
     <header>
         <div class="logo">ScientiaForum</div>
-        <div class="search-bar">
-            <input type="text" placeholder="Search...">
-            <button>Search</button>
-        </div>
         <div class="auth-buttons">
             <button onclick="location.href='login.html'">Login</button>
             <button onclick="location.href='signup.html'">Sign Up</button>
@@ -39,29 +35,25 @@
 
     <!-- Main Content Section -->
     <main>
-        <!-- Popular Posts Section -->
-        <section class="popular-posts">
-            <h2>Popular Posts</h2>
-            <div class="posts-container">
-                <!-- Example Post -->
-                <div class="post-card">
-                    <h3>Post Title</h3>
-                    <p>Post summary goes here...</p>
-                </div>
-                <!-- Repeat Post Card as needed -->
+        <section class="forum">
+            <h2>Forum</h2>
+            <div class="categories">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="science.html">Science</a></li>
+                    <li><a href="mathematics.html">Mathematics</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="literature.html">Literature</a></li>
+                </ul>
             </div>
-        </section>
-
-        <!-- Latest Posts Section -->
-        <section class="latest-posts">
-            <h2>Latest Posts</h2>
-            <div class="posts-container">
-                <!-- Example Post -->
-                <div class="post-card">
-                    <h3>Post Title</h3>
-                    <p>Post summary goes here...</p>
+            <div class="posts-list">
+                <h3>Posts</h3>
+                <div class="post">
+                    <h4><a href="post-detail.html">Post Title</a></h4>
+                    <p>Posted by <strong>Author Name</strong> on <em>Date</em></p>
+                    <p>Summary of the post...</p>
                 </div>
-                <!-- Repeat Post Card as needed -->
+                <!-- Repeat Post Div as needed -->
             </div>
         </section>
     </main>
@@ -100,36 +92,6 @@ header {
 
 header .logo {
     font-size: 1.5em;
-}
-
-.search-bar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.5em;
-}
-
-.search-bar input {
-    padding: 0.5em;
-    font-size: 1em;
-    width: 300px; /* Fixed width for better alignment */
-    border-radius: 5px 0 0 5px;
-    border: 1px solid #ccc;
-    border-right: none;
-}
-
-.search-bar button {
-    padding: 0.5em;
-    font-size: 1em;
-    border-radius: 0 5px 5px 0;
-    border: 1px solid #ccc;
-    background-color: #4CAF50;
-    color: white;
-    cursor: pointer;
-}
-
-.search-bar button:hover {
-    background-color: #45a049;
 }
 
 header .auth-buttons button {
@@ -180,31 +142,54 @@ main {
     padding: 2em;
 }
 
-section {
-    margin-bottom: 2em;
+section.forum {
+    display: flex;
+    gap: 2em;
 }
 
-h2 {
+.categories, .posts-list {
+    flex: 1;
+}
+
+.categories h3, .posts-list h3 {
     border-bottom: 2px solid #4CAF50;
     padding-bottom: 0.5em;
 }
 
-.posts-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
+.categories ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.post-card {
+.categories ul li {
+    margin: 1em 0;
+}
+
+.categories ul li a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.categories ul li a:hover {
+    text-decoration: underline;
+}
+
+.post {
     border: 1px solid #ccc;
-    border-radius: 0.5em;
+    border-radius: 5px;
     padding: 1em;
-    flex: 1;
-    min-width: 200px;
+    margin-bottom: 1em;
+    background-color: #f9f9f9;
 }
 
-.post-card:hover {
-    background-color: #f1f1f1;
+.post h4 a {
+    color: #333;
+    text-decoration: none;
+}
+
+.post h4 a:hover {
+    text-decoration: underline;
 }
 
 footer {
@@ -226,7 +211,6 @@ footer a:hover {
 
 1. **헤더 섹션**
    - **로고**: 좌측 상단에 배치하여 홈페이지로 링크 설정.
-   - **검색 바**: 헤더의 중앙에 배치, 검색 버튼 추가.
    - **로그인/회원가입 버튼**: 우측 상단에 배치.
 
 2. **네비게이션 바**
@@ -236,10 +220,11 @@ footer a:hover {
    - 호버 시 배경색이 변경되도록 설정.
 
 3. **메인 콘텐츠**
-   - 인기 게시글과 최신 게시글 섹션으로 구성.
+   - **카테고리 목록**: 좌측에 배치하여 사용자가 관심 있는 카테고리를 선택할 수 있도록 구성.
+   - **게시글 목록**: 중앙에 배치하여 각 게시글의 제목, 작성자, 작성일, 요약을 표시.
    - 각 게시글은 카드 형태로 표시.
 
 4. **푸터**
    - 연락처, 이용약관, 개인정보처리방침 링크를 포함.
 
-이제 검색 바에 버튼이 추가된 상태입니다. 이 디자인을 바탕으로 HTML과 CSS를 작성하여 홈페이지를 구현하면 됩니다. 다음 페이지 구현을 위해 계속 진행하거나, 특정 부분에 대한 추가적인 도움이 필요하시면 말씀해 주세요!
+이제 게시판 페이지가 완성되었습니다. 다음 페이지 구현을 위해 계속 진행하거나, 특정 부분에 대한 추가적인 도움이 필요하시면 말씀해 주세요!
