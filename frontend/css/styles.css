@@ -1,0 +1,464 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Header and Footer Styles */
+header, footer {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5em;
+}
+
+header .search-bar {
+    display: flex;
+    align-items: center;
+}
+
+header .search-bar input {
+    padding: 0.5em;
+    font-size: 1em;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #ccc;
+    border-right: none;
+}
+
+header .search-bar button {
+    padding: 0.5em;
+    font-size: 1em;
+    border-radius: 0 5px 5px 0;
+    border: 1px solid #ccc;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+header .search-bar button:hover {
+    background-color: #45a049;
+}
+
+header .auth-buttons button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 0.5em 1em;
+    margin: 0 0.5em;
+    cursor: pointer;
+}
+
+header .auth-buttons button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation Bar Styles */
+.nav-bar {
+    background-color: #4CAF50;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-bar ul li {
+    display: inline;
+}
+
+.nav-bar ul li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.nav-bar ul li a:hover {
+    background-color: #45a049;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    width: 100%;
+}
+
+/* Homepage Styles */
+.posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.post-card {
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+    padding: 1em;
+    flex: 1;
+    min-width: 200px;
+}
+
+.post-card:hover {
+    background-color: #f1f1f1;
+}
+
+/* Forum Styles */
+section.forum {
+    display: flex;
+    gap: 2em;
+}
+
+.categories {
+    flex: 0.3;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.categories h3 {
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+}
+
+.categories ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.categories ul li {
+    margin: 1em 0;
+}
+
+.categories ul li a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.categories ul li a:hover {
+    text-decoration: underline;
+}
+
+.posts-list {
+    flex: 0.7;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.posts-list h3 {
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+}
+
+.post {
+    border-bottom: 1px solid #ccc;
+    padding: 1em 0;
+    margin-bottom: 1em;
+}
+
+.post h4 a {
+    color: #333;
+    text-decoration: none;
+}
+
+.post h4 a:hover {
+    text-decoration: underline;
+}
+
+.post p {
+    margin: 0.5em 0;
+}
+
+/* Pagination Styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.pagination button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 0.5em 1em;
+    margin: 0 0.5em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.pagination button:hover {
+    background-color: #45a049;
+}
+
+.pagination #page-info {
+    margin: 0 1em;
+}
+
+/* Post Detail Styles */
+.post-meta {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.post-content p {
+    margin: 1em 0;
+}
+
+.comments {
+    margin-top: 2em;
+}
+
+.comment {
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #ccc;
+}
+
+.comment p {
+    margin: 0.5em 0;
+}
+
+.comment-form .form-group {
+    margin-bottom: 1em;
+}
+
+.comment-form .form-group label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.comment-form .form-group input,
+.comment-form .form-group textarea {
+    width: 100%;
+    padding: 0.5em;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.comment-form button {
+    width: 100%;
+    padding: 0.5em;
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comment-form button:hover {
+    background-color: #45a049;
+}
+
+/* Profile Styles */
+.profile-header {
+    text-align: center;
+}
+
+.profile-header .profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1em;
+}
+
+.profile-header h2 {
+    margin: 0.5em 0;
+}
+
+.profile-header .email, .profile-header .bio {
+    margin: 0.5em 0;
+}
+
+.profile-header button {
+    padding: 0.5em 1em;
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile-header button:hover {
+    background-color: #45a049;
+}
+
+.profile-posts {
+    margin-top: 2em;
+}
+
+.profile-posts h3 {
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+}
+
+.profile-posts .post {
+    border-bottom: 1px solid #ccc;
+    padding: 1em 0;
+    margin-bottom: 1em;
+}
+
+/* Admin Dashboard Styles */
+.admin-dashboard h2 {
+    text-align: center;
+}
+
+.dashboard-section {
+    margin-bottom: 2em;
+}
+
+.dashboard-section h3 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 0.5em;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+td button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-right: 0.5em;
+}
+
+td button:hover {
+    background-color: #45a049;
+}
+
+/* Login and Signup Form Styles */
+.login-form, .signup-form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.login-form h2, .signup-form h2 {
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 1em;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.5em;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form button, .signup-form button {
+    width: 100%;
+    padding: 0.5em;
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form button:hover, .signup-form button:hover {
+    background-color: #45a049;
+}
+
+.login-form p, .signup-form p {
+    text-align: center;
+}
+
+.login-form p a, .signup-form p a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.login-form p a:hover, .signup-form p a:hover {
+    text-decoration: underline;
+}
