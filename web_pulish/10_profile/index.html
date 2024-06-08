@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScientiaForum - Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">ScientiaForum</div>
+        <div class="auth-buttons">
+            <button onclick="location.href='login.html'">Login</button>
+            <button onclick="location.href='signup.html'">Sign Up</button>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="category.html">Science</a></li>
+            <li><a href="category.html">Mathematics</a></li>
+            <li><a href="category.html">History</a></li>
+            <li><a href="category.html">Literature</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main>
+        <section class="profile">
+            <div class="profile-header">
+                <img src="profile-picture.jpg" alt="Profile Picture" class="profile-picture">
+                <h2>Username</h2>
+                <p class="email">user@example.com</p>
+                <p class="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla, erat in interdum ullamcorper, odio leo aliquet orci, et sagittis lorem turpis a libero.</p>
+                <button onclick="location.href='edit-profile.html'">Edit Profile</button>
+            </div>
+            <div class="profile-posts">
+                <h3>My Posts</h3>
+                <div class="post">
+                    <h4><a href="post-detail.html">Post Title 1</a></h4>
+                    <p>Posted on <em>Date</em></p>
+                    <p>Summary of the post...</p>
+                </div>
+                <div class="post">
+                    <h4><a href="post-detail.html">Post Title 2</a></h4>
+                    <p>Posted on <em>Date</em></p>
+                    <p>Summary of the post...</p>
+                </div>
+                <!-- Repeat Post Div as needed -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Contact: info@scientiaforum.com</p>
+        <p><a href="terms.html">Terms of Use</a> | <a href="privacy.html">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>

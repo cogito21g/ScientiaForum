@@ -1,0 +1,163 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5em;
+}
+
+header .auth-buttons button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 0.5em 1em;
+    margin: 0 0.5em;
+    cursor: pointer;
+}
+
+header .auth-buttons button:hover {
+    background-color: #45a049;
+}
+
+/* Navigation Bar Styles */
+.nav-bar {
+    background-color: #4CAF50;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-bar ul li {
+    display: inline;
+}
+
+.nav-bar ul li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.nav-bar ul li a:hover {
+    background-color: #45a049;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+section.post-detail {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 800px;
+    width: 100%;
+}
+
+section.post-detail h2 {
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+}
+
+.post-meta {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.post-content p {
+    margin: 1em 0;
+}
+
+.comments {
+    margin-top: 2em;
+}
+
+.comment {
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #ccc;
+}
+
+.comment p {
+    margin: 0.5em 0;
+}
+
+.comment-form .form-group {
+    margin-bottom: 1em;
+}
+
+.comment-form .form-group label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.comment-form .form-group input,
+.comment-form .form-group textarea {
+    width: 100%;
+    padding: 0.5em;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.comment-form button {
+    width: 100%;
+    padding: 0.5em;
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comment-form button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
