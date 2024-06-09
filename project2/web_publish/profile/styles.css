@@ -1,0 +1,318 @@
+/* common.css */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+header .search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+header .search-bar input {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .search-bar button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    margin-left: 10px;
+    background-color: #ff6b6b;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+header .search-bar button:hover {
+    background-color: #ff4b4b;
+}
+
+header .auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+header .auth-buttons .login-button,
+header .auth-buttons .signup-button {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+header .auth-buttons .login-button {
+    background-color: #2196f3;
+}
+
+header .auth-buttons .signup-button {
+    background-color: #f39c12;
+}
+
+header .auth-buttons .login-button:hover {
+    background-color: #1e88e5;
+}
+
+header .auth-buttons .signup-button:hover {
+    background-color: #e67e22;
+}
+
+nav {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #f1f1f1;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer .footer-content div {
+    margin: 10px 20px;
+}
+
+/* profile.css */
+
+/* 공통 스타일 common.css로 이동 */
+/* 특수 스타일 이 파일에 추가 */
+
+.profile-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.profile-info h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.profile-info button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.profile-info button:hover {
+    background-color: #45a049;
+}
+
+.user-info, .study-groups, .recent-activities {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-info h2, .study-groups h2, .recent-activities h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.group-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.recent-activities ul {
+    list-style: none;
+    padding: 0;
+}
+
+.recent-activities li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.recent-activities li:last-child {
+    border-bottom: none;
+}
+
+/* profile.css */
+
+/* 공통 스타일 common.css로 이동 */
+/* 특수 스타일 이 파일에 추가 */
+
+body {
+    background: linear-gradient(to bottom, #d4e9e2, #f8fbf8); /* 산골 느낌의 배경 그라데이션 */
+    color: #333;
+}
+
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #4CAF50; /* 부드러운 녹색 테두리 */
+}
+
+.profile-info {
+    text-align: center;
+}
+
+.profile-info h1 {
+    font-size: 2em;
+    margin: 0;
+    color: #4CAF50; /* 부드러운 녹색 */
+}
+
+.profile-info button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.profile-info button:hover {
+    background-color: #45a049;
+}
+
+.user-info, .study-groups, .recent-activities {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-info h2, .study-groups h2, .recent-activities h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #4CAF50; /* 부드러운 녹색 */
+}
+
+.group-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.recent-activities ul {
+    list-style: none;
+    padding: 0;
+}
+
+.recent-activities li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.recent-activities li:last-child {
+    border-bottom: none;
+}

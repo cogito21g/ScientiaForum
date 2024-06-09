@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Community - Community</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Study Community</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>Search</button>
+        </div>
+        <div class="auth-buttons">
+            <a href="#" class="login-button">Login</a>
+            <a href="#" class="signup-button">Signup</a>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="#">Study Groups</a></li>
+            <li><a href="#">Events</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Categories -->
+        <section class="categories">
+            <h2>Categories:</h2>
+            <ul>
+                <li><a href="#">All</a></li>
+                <li><a href="#">General</a></li>
+                <li><a href="#">Questions</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Other</a></li>
+            </ul>
+        </section>
+
+        <div class="main-content">
+            <!-- 게시판 -->
+            <section class="board">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>제목</th>
+                            <th>작성자</th>
+                            <th>작성일</th>
+                            <th>댓글 수</th>
+                        </tr>
+                    </thead>
+                    <tbody id="post-list">
+                        <!-- 게시글 목록이 JavaScript에 의해 여기에 삽입됩니다. -->
+                    </tbody>
+                </table>
+                <div class="pagination">
+                    <button id="prev-page">Previous</button>
+                    <span id="page-info"></span>
+                    <button id="next-page">Next</button>
+                </div>
+            </section>
+
+            <!-- 사이드바 -->
+            <aside class="sidebar">
+                <div class="popular-posts">
+                    <h3>인기 게시글</h3>
+                    <ul>
+                        <li><a href="#">제목 1</a></li>
+                        <li><a href="#">제목 2</a></li>
+                        <li><a href="#">제목 3</a></li>
+                    </ul>
+                </div>
+                <div class="recent-comments">
+                    <h3>최근 댓글</h3>
+                    <ul>
+                        <li><a href="#">댓글 1 - User1</a></li>
+                        <li><a href="#">댓글 2 - User2</a></li>
+                        <li><a href="#">댓글 3 - User3</a></li>
+                    </ul>
+                </div>
+                <div class="notices">
+                    <h3>공지사항</h3>
+                    <ul>
+                        <li><a href="#">공지 1</a></li>
+                        <li><a href="#">공지 2</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>About Us | Terms of Service | Privacy Policy</p>
+            </div>
+            <div class="footer-social">
+                <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+            </div>
+            <div class="footer-contact">
+                <p>Email: contact@studycommunity.com | Phone: 123-456-7890</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,260 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header .search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+header .search-bar input {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+}
+
+header .search-bar button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    background-color: #ff6b6b;
+    color: #fff;
+    cursor: pointer;
+}
+
+header .auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+header .auth-buttons .login-button,
+header .auth-buttons .signup-button {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+header .auth-buttons .login-button {
+    background-color: #4caf50;
+}
+
+header .auth-buttons .signup-button {
+    background-color: #2196f3;
+}
+
+nav {
+    background-color: #444;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-banner {
+    background: linear-gradient(to right, #a8e6cf, #dcedc1);
+    color: #333;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.main-banner h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.main-banner button {
+    padding: 10px 20px;
+    font-size: 1em;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6b6b;
+    color: #fff;
+    cursor: pointer;
+}
+
+.introduction {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+}
+
+.introduction .intro-item {
+    text-align: center;
+}
+
+.introduction .intro-item img {
+    width: 50px;
+    height: 50px;
+}
+
+.popular-groups {
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.popular-groups h2 {
+    margin-bottom: 20px;
+}
+
+.slider {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 10px;
+    margin-top: -22px;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.dots {
+    text-align: center;
+    padding: 10px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.group-card h3 {
+    margin-top: 0;
+}
+
+.group-card button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+}
+
+.recent-activities {
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+}
+
+.recent-activities h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.recent-activities ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.recent-activities ul li {
+    margin: 10px 0;
+}
+
+.recent-activities ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .footer-content div {
+    margin: 10px 0;
+}
